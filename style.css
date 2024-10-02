@@ -1,6 +1,6 @@
 .masthead{
     background-size: cover;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
     background-position: center;
     min-height: 100vh;
     position: relative;
@@ -36,4 +36,8 @@ h2{
     h2{
         font-size: calc(1.3rem + 2.3vw);
     }
+}
+
+.nav-item:hover{
+    font-weight: bold;
 }
