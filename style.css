@@ -1,6 +1,6 @@
 .masthead{
     background-size: cover;
-    /* background-repeat: no-repeat; */
+    background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
     position: relative;
@@ -10,11 +10,6 @@
 
 h1{
     font-size: 4rem;
-    color: #555555;
-    text-align: center;
-}
-h2{
-    font-size: 2.5rem;
     color: #555555;
     text-align: center;
 }
