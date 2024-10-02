@@ -18,12 +18,12 @@
     <!-- Navigation Code -->
     <header class="header_area">
       <div class="main-menu">
-        <nav class="navbar navbar-expand-lg fixed-top">
+        <nav class="navbar navbar-expand-lg fixed-top" id="main_navbar">
           <div class="container">
             <a class="navbar-brand" href="#">
               <img src="/logos/HAR_logo.png" alt="" width="110" height="110">
               </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button id="navCollapsebtn" class="navbar-toggler" onclick="changeNavBack()" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
@@ -53,16 +53,42 @@
      <section class="home-page">
       <div class="masthead"
             style="background-image: url('/resources/pexels-apasaric-1437493.jpg');">
-        <div class="d-flex color-overlay justify-content-center align-items-center">
-          <span>
-            <h1>Bringing imagination</h1>
-        <!-- </br> -->
-              <h1>to life through design</h1>
-          </span>
+        <div class="container text-sm-end color-overlay" style="margin-top: 25vh;">
+          <div class="d-flex flex-row-reverse">
+            <div class="d-flex flex-column align-items-end">
+              <h1>Lorem ipsum dolor sit.</h1>
+              <h1>Lorem ipsum dolor sit amet.</h1>
+            </div>
+          </div>
+          <div class="d-flex flex-row-reverse" style="padding-left: 3rem; padding-top: 2rem;">
+            <button type="button" class="btn btn-outline-secondary btn-lg" style="margin-left: .5rem;">Contact Us</button>
+            <button type="button" class="btn btn-secondary btn-lg">Projects</button>
+          </div>
         </div>
       </div>
      </section>
     <!-- Home Page End -->
+    
+    
+    
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script>
+      
+      function changeNavBack(){
+       
+        var navbar_ele = document.getElementById("main_navbar")
+        var bgcolor = window.getComputedStyle(navbar_ele).backgroundColor
+        console.log(bgcolor)
+        if (bgcolor == 'rgb(217, 228, 221)'){
+          navbar_ele.style.background = "rgb(0,0,0,0)"
+        }
+        else{
+          navbar_ele.style.background = "#D9E4DD"
+        }
+        var width = window.innerWidth;
+        
+      }
+    </script>
   </body>
 </html>

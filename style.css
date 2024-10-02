@@ -9,7 +9,7 @@
 }
 
 h1{
-    font-size: 4rem;
+    font-size: 3rem;
     color: #555555;
     text-align: center;
 }
@@ -20,10 +20,19 @@ h1{
     /* background-color: rgba(0, 0, 0, 0.2) */
 }
 
+.nav-item:hover{
+    font-weight: bold;
+}
+
+.btn-secondary:hover{
+    background-color: #ffffff;
+    color: #555555;
+}
+
 @media (max-width: 768px){
     .masthead{
         min-height: 100vh;
-        min-width: 30vh;
+        /* min-width: 30vh; */
     }
     h1{
         font-size: calc(1.525rem + 3.3vw);
@@ -31,8 +40,15 @@ h1{
     h2{
         font-size: calc(1.3rem + 2.3vw);
     }
+    .flex-row-reverse{
+        justify-content: center;
+    }
+    .nav-item:hover{
+        font-weight: bold;
+    }
+    .btn-secondary:hover{
+        background-color: #EBEBEB;
+        color: #6c757d;
+    }
 }
 
-.nav-item:hover{
-    font-weight: bold;
-}
