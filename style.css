@@ -1,17 +1,30 @@
 .masthead{
-    background-size: cover;
+    background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
     min-height: 100vh;
     position: relative;
     color: #ffffff;
-    opacity: 70%;
+    opacity: 90%;
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 5rem;
     color: #555555;
     text-align: center;
+    font-weight: bold;
+}
+h2{
+    font-size: 6rem;
+    color: #555555;
+    text-align: center;
+}
+
+h4{
+    font-size: 1.5rem;
+    color: #555555;
+    text-align: center;
+    font-weight: lighter;
 }
 .color-overlay {
     position: absolute;
@@ -32,13 +45,19 @@ h1{
 @media (max-width: 768px){
     .masthead{
         min-height: 100vh;
-        /* min-width: 30vh; */
+        min-width: 30vh;
     }
     h1{
         font-size: calc(1.525rem + 3.3vw);
+        color: #ffffff;
     }
     h2{
         font-size: calc(1.3rem + 2.3vw);
+        color: #ffffff;
+    }
+    h4{
+        font-size: calc(1.3rem + 2.3vw);
+        color: #ffffff;
     }
     .flex-row-reverse{
         justify-content: center;
