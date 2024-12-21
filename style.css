@@ -1,14 +1,36 @@
-.masthead{
+body{
+    position: relative;
+}
+
+.bg-img{
+    background-image: url('resources/pexels-apasaric-1437493.jpg');
     background-size:cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-attachment: fixed;
+    background-position: center center;
     height: 100vh;
+    width: 100%;
     position: relative;
+    z-index: -1;
+}
+
+.blur{
+    position:absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: blur(5px);
+}
+
+.content{
+    position: absolute;
 }
 
 h1{
     font-size: 7rem;
-    color: #555555;
+    color: #4e4e4e;
     text-align: center;
     font-weight: bold;
 }
@@ -21,8 +43,6 @@ h2{
 h1.heading_green{
     color: #509431;
 }
-
-
 
 h4{
     font-size: 1.5rem;
@@ -37,8 +57,12 @@ h4{
     /* background-color: rgba(0, 0, 0, 0.2) */
 }
 
+.nav-item{
+    font-weight: 600;
+}
+
 .nav-item:hover{
-    font-weight: bold;
+    font-weight: lighter;
 }
 
 .btn-secondary:hover{
@@ -46,15 +70,15 @@ h4{
     color: #555555;
 }
 
-li.a{
-    color: #ffffff;
-}
+
+/* .nav-link{
+    color: #000000;
+    font-weight: 500;
+} */
 
 @media (max-width: 768px){
-    .masthead{
-        min-height: 100vh;
-        min-width: 30vh;
-        opacity: 40%;
+    h1.heading_green{
+        color: #509431;
     }
     h1{
         font-size: calc(1.525rem + 3.3vw);
@@ -65,7 +89,7 @@ li.a{
         color: #555555;
     }
     h4{
-        font-size: calc(1.3rem + 2.3vw);
+        font-size: calc(0.8rem + 2.3vw);
         color: #555555;
     }
     .flex-row-reverse{
@@ -74,9 +98,10 @@ li.a{
     .nav-item:hover{
         font-weight: bold;
     }
+    
     .btn-secondary:hover{
-        background-color: #EBEBEB;
-        color: #6c757d;
+        background-color: #ffffff;
+        color: #555555;
     }
 }
 
