@@ -3,18 +3,18 @@ body{
 }
 
 .bg-img{
-    background-image: url('resources/pexels-apasaric-1437493.jpg');
+    background-image: url('resources/blurred_background.jpg');
     background-size:cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
     height: 100vh;
-    width: 100%;
+    width: 100vw;
     position: relative;
     z-index: -1;
 }
 
-.blur{
+/* .blur{
     position:absolute;
     top: 0;
     left: 0;
@@ -22,17 +22,26 @@ body{
     width: 100vw;
     height: 100vh;
     backdrop-filter: blur(5px);
-}
+} */
 
-.content{
-    position: absolute;
-}
-
-h1{
+.bg_text{
     font-size: 7rem;
-    color: #4e4e4e;
+    background-color: #509431;
+    color: #fff;
+    position: relative;
+    mix-blend-mode: multiply;
+    border-radius: 25px;
+    padding: 1.2rem;
+    text-align: center;
+}
+
+.heading_txt{
+    font-size: 7rem;
+    font-family: lato;
+    color: #656765;
     text-align: center;
     font-weight: bold;
+    padding: 1.2rem;
 }
 h2{
     font-size: 6rem;
@@ -40,15 +49,17 @@ h2{
     text-align: center;
 }
 
-h1.heading_green{
-    color: #509431;
-}
-
 h4{
     font-size: 1.5rem;
     color: #555555;
     text-align: center;
     font-weight: lighter;
+}
+
+.a_link{
+    color: #509431;
+    font-size: 1.3rem;
+    font-weight: bold;
 }
 .color-overlay {
     position: absolute;
@@ -77,6 +88,44 @@ h4{
 } */
 
 @media (max-width: 768px){
+
+    .bg_text{
+        font-size: calc(1.525rem + 3.3vw);
+        background-color: #509431;
+        color: #fff;
+        position: relative;
+        mix-blend-mode: multiply;
+        border-radius: 25px;
+        padding: 1.2rem;
+        text-align: center;
+    }
+
+    .heading_txt{
+        font-size: calc(1.525rem + 3.3vw);
+        font-family: lato;
+        color: #656765;
+        text-align: center;
+        font-weight: bold;
+        padding: 1.2rem;
+    }
+    h2{
+        font-size: calc(1.3rem + 2.3vw);
+        color: #555555;
+        text-align: center;
+    }
+    
+    h4{
+        font-size: calc(0.8rem + 2.3vw);
+        color: #555555;
+        text-align: center;
+        font-weight: lighter;
+    }
+    
+    .a_link{
+        color: #509431;
+        font-size: calc(0.4rem + 2.3vw);
+        font-weight: bold;
+    }
     h1.heading_green{
         color: #509431;
     }
