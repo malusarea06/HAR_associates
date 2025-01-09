@@ -2,6 +2,7 @@ body{
     position: relative;
 }
 
+
 .bg-img{
     background-image: url('resources/blurred_background.jpg');
     background-size:cover;
