@@ -1,7 +1,11 @@
 body{
     position: relative;
+    background-color: #F2F2F2;
 }
 
+.home_pg{
+    padding-top: 15%;
+}
 
 .bg-img{
     background-image: url('resources/blurred_background.jpg');
@@ -9,11 +13,12 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center center;
-    height: 100vh;
+    height: 80vh;
     width: 100vw;
     position: relative;
     z-index: -1;
 }
+
 
 /* .blur{
     position:absolute;
@@ -27,10 +32,10 @@ body{
 
 .bg_text{
     font-size: 7rem;
-    background-color: #509431;
+    background-color: #656765;
     color: #fff;
     position: relative;
-    mix-blend-mode: multiply;
+    /* mix-blend-mode:multiply; */
     border-radius: 25px;
     padding: 1.2rem;
     text-align: center;
@@ -50,11 +55,96 @@ h2{
     text-align: center;
 }
 
-h4{
-    font-size: 1.5rem;
-    color: #555555;
-    text-align: center;
+.card-title{
+    color: white;
+    font-weight:bolder;
+}
+
+.card-layout{
+    padding: 3rem;
+    border-radius: 30%;
+}
+
+.card-text{
+    color: white;
     font-weight: lighter;
+}
+
+.heading_home_cards{
+    font-size: 4rem;
+    color: white;
+}
+
+.borders{
+    background-color: #919395e9;
+    padding: 1.8rem;
+    border: 1px solid white;
+    border-top: 0px
+}
+
+.home_card_text{
+    font-size: 1.3rem;
+    color: white;
+}
+
+card-body{
+    padding: 4rem;
+}
+
+hr{
+    height: 10px;
+    size: 3rem;
+}
+
+.service-heading{
+    color: white;
+    font-weight:bold;
+    font-size: 2.2rem;
+}
+
+.srv_head{
+    font-size: 5.5rem;
+    color: #000000;
+    /* text-align: center; */
+    letter-spacing: 8px;
+    font-family:'Oswald';
+}
+
+.srv_head_color{
+    font-size: 5.5rem;
+    color: #9E877A;
+    /* text-align: center; */
+    letter-spacing: 8px;
+    font-family:'Oswald';
+}
+
+
+.abt_head{
+    font-size: 5.5rem;
+    color: #000000;
+    text-align: center;
+    letter-spacing: 8px;
+    font-family:'Oswald';
+}
+
+.abt_head_color{
+    font-size: 5.5rem;
+    color: #9E877A;
+    text-align: center;
+    letter-spacing: 8px;
+    font-family:'Oswald';
+}
+
+h4{
+    font-size: 2rem;
+    color: #999696eb;
+    /* text-align: center; */
+    font-weight: lighter;
+}
+
+.about_para{
+    font-size: 1.2rem;
+    padding-right: 3rem;
 }
 
 .a_link{
@@ -82,6 +172,50 @@ h4{
     color: #555555;
 }
 
+.card-img-top{
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+}
+
+.card-body{
+    border-end-start-radius: 2rem;
+    border-end-end-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    padding: 2rem;
+}
+
+.card{
+    border-radius: 2rem;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+}
+
+
+.service-title{
+    align-items: center;
+    padding-top: 6rem;
+}
+
+.service-content{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.cend{
+    justify-content: end;
+}
+
+.section_start{
+    margin-top: 7.5%;
+    margin-bottom: 10%;
+}
+
+.about_us{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
 
 /* .nav-link{
     color: #000000;
@@ -92,13 +226,87 @@ h4{
 
     .bg_text{
         font-size: calc(1.525rem + 3.3vw);
-        background-color: #509431;
+        background-color: #656765;
         color: #fff;
         position: relative;
         mix-blend-mode: multiply;
         border-radius: 25px;
         padding: 1.2rem;
         text-align: center;
+    }
+
+    .home_pg{
+        padding-top: 35%;
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+    .cend{
+        justify-content: center;
+    }
+
+    .abt_head{
+        font-size: calc(1.525rem + 3.3vw);
+        color: #000000;
+        text-align: start;
+        letter-spacing: 8px;
+        font-family:'Oswald';
+    }
+    
+    .heading_home_cards{
+        font-size: calc(1.525rem + 3.3vw);
+        color: white;
+    }
+    
+    .home_card_text{
+        font-size: 1rem;
+        color: white;
+        text-align: center;
+    }
+
+    .abt_head_color{
+        font-size: calc(1.525rem + 3.3vw);
+        color: #9E877A;
+        text-align: start;
+        letter-spacing: 8px;
+        font-family:'Oswald';
+    }
+
+    .srv_head{
+        font-size: calc(1.525rem + 3.3vw);
+        color: #000000;
+        text-align: start;
+        letter-spacing: 8px;
+        font-family:'Oswald';
+    }
+    
+    .srv_head_color{
+        font-size: calc(1.525rem + 3.3vw);
+        color: #9E877A;
+        text-align: start;
+        letter-spacing: 8px;
+        font-family:'Oswald';
+    }
+
+    .cstart{
+        justify-content: center;
+    }
+
+    .card-layout{
+        padding: 1rem;
+    }
+
+    .service-title{
+        margin-top: 3rem;
+    }
+
+    .service-content{
+        margin-top: 0rem;
+        margin-bottom: 0rem;
+    }
+
+    hr{
+        margin-left: 1rem;
+        width: 20%;
     }
 
     .heading_txt{
