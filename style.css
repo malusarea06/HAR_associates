@@ -57,6 +57,8 @@ h2{
 
 .card-title{
     color: white;
+    font-size: 1.7rem;
+    font-family: 'lato';
     font-weight:bolder;
 }
 
@@ -67,6 +69,7 @@ h2{
 
 .card-text{
     color: white;
+    font-size: 1.1rem;
     font-weight: lighter;
 }
 
@@ -104,7 +107,7 @@ hr{
 
 .srv_head{
     font-size: 5.5rem;
-    color: #000000;
+    color: #503a2c;
     /* text-align: center; */
     letter-spacing: 8px;
     font-family:'Oswald';
@@ -137,7 +140,7 @@ hr{
 
 h4{
     font-size: 2rem;
-    color: #999696eb;
+    color: #4b4b4b;
     /* text-align: center; */
     font-weight: lighter;
 }
@@ -193,8 +196,10 @@ h4{
 
 
 .service-title{
-    align-items: center;
-    padding-top: 6rem;
+    align-items: start;
+    padding-top: 1.5rem;
+    padding-left: 3rem;
+    
 }
 
 .service-content{
@@ -207,13 +212,18 @@ h4{
 }
 
 .section_start{
-    margin-top: 7.5%;
-    margin-bottom: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .about_us{
     margin-top: 5rem;
     margin-bottom: 5rem;
+}
+
+.team_info{
+    text-align: center;
+    padding: 2rem;
 }
 
 
