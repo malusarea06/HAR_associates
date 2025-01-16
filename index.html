@@ -15,7 +15,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    
+    <!-- Option 1: Include in HTML -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east" />
     <link rel="stylesheet" href="/style.css">
 
   </head>
@@ -37,7 +39,7 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item ms-3">
-                  <a class="nav-link" href="#ourservices">Services</a>
+                  <a class="nav-link" href="#ourservices">projects</a>
                 </li>
                 <li class="nav-item ms-3">
                   <a class="nav-link" href="#">Projects</a>
@@ -101,14 +103,14 @@
 
     
 
-    <!-- Our Services -->
+    <!-- Our Projects -->
     <section class="our_services section_start" id="ourservices">
       <div class="container-fluid">
         <!-- Service Title -->
         <div class="d-flex flex-column service-title">
           <div class="heading_service">
-            <span class="srv_head">Our </span>
-            <span class="srv_head_color">Services</span>
+            <span class="srv_head">OUR </span>
+            <span class="srv_head_color">PROJECTS</span>
           </div>
           <hr style="width: 40%;" size="5">
         </div>
@@ -148,31 +150,40 @@
             </div>
           </div> -->
 
-          <div class="row row-cols-1 row-cols-md-3 g-4" style="padding: 3%; padding-top: 1rem;">
-            <div class="col">
-              <div class="card h-100">
+          <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: %;">
+            <div class="col d-flex justify-content-end">
+              <div class="card w-75 h-100">
                 <img src="resources/background_1.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color:#B86A45 ;">
                   <h5 class="card-title">Construction</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="/pages/construction_projects.html" role="button">View Projects
+                    <i class="bi bi-arrow-up-right p-.5"></i>
+                  </a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card h-100">
+            <div class="col d-flex justify-content-center">
+              <div class="card w-75 h-100">
                 <img src="resources/interior_2.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color: #968679;">
                   <h5 class="card-title">Interior Designing</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="#!" role="button">View Projects
+                    <i class="bi bi-arrow-up-right p-.5"></i>
+                  </a>
                 </div>
               </div>
             </div>
             <div class="col">
-              <div class="card h-100">
+              <div class="card w-75 h">
                 <img src="resources/renovation.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color: #6d7985;">
                   <h5 class="card-title">Renovations & Restoration</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="#!" role="button">View Projects
+                    <i class="bi bi-arrow-up-right p-.5"></i>
+                  </a>
                 </div>
               </div>
             </div>
@@ -223,53 +234,65 @@
     </section>
     <!-- About Us End -->
 
-    <!-- Meet out team -->
+    <!-- Meet our team -->
     <section class="team_section section_start" id="har_team">
       <div class="container-fluid">
         <div class="d-flex flex-column service-title">
           <div class="heading_service">
-            <span class="srv_head">Meet Our </span>
-            <span class="srv_head_color">Team</span>
+            <span class="srv_head">MEET OUR </span>
+            <span class="srv_head_color">TEAM</span>
           </div>
           <hr style="width: 40%;" size="5">
         </div>
-        <div class="row" style="padding: 3rem;">
+        <div class="row" style="padding: 6rem;">
           <div class="col-md-3 col-sm-6">
-            <div class="d-flex flex-column align-items-center">
-              <img src="/resources/team_1.JPG" alt="" class="img-fluid" style="width: 400px; height: 500px;">
-              <div class="team_info">
-                <h1>Aniket Malusare</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos.</p>
+            <div class="card h-100">
+              <div class="team_image">
+                <img src="/resources/user_1.jpg" class="card-img-top" alt="...">
+              </div>
+          
+              <div class="card-body">
+                <h5 class="card-title" style="color: #6d7985;">Maninder Singh Babra</h5>
+                <p class="card-text" style="color: #6d7985; font-size: 1rem;">10+ years experience in Interior Design and Renovations</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
-            <div class="d-flex flex-column align-items-center">
-              <img src="/resources/team_1.JPG" alt="" class="rounded img-fluid" style="width: 400px; height: 500px;">
-              <div class="team_info">
-                <h1>Aniket Malusare</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos.</p>
+            <div class="card h-100">
+              <div class="team_image">
+                <img src="/resources/user_2.jpg" class="card-img-top" alt="...">
+              </div>
+          
+              <div class="card-body">
+                <h5 class="card-title" style="color: #6d7985;">Shubham C.</h5>
+                <p class="card-text" style="color: #6d7985; font-size: 1rem;">7+ years experience in Interior Design and Renovations</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
-            <div class="d-flex flex-column align-items-center">
-              <img src="/resources/team_1.JPG" alt="" class="img-fluid" style="width: 400px; height: 500px;">
-              <div class="team_info">
-                <h1>Aniket Malusare</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos.</p>
+            <div class="card h-100">
+              <div class="team_image">
+                <img src="/resources/user_1.jpg" class="card-img-top" alt="...">
+              </div>
+          
+              <div class="card-body">
+                <h5 class="card-title" style="color: #6d7985;">Bhavesh</h5>
+                <p class="card-text" style="color: #6d7985; font-size: 1rem;">7+ years experience in Interior Design and Renovations</p>
               </div>
             </div>
           </div>
 
           <div class="col-md-3 col-sm-6">
-            <div class="d-flex flex-column align-items-center">
-              <img src="/resources/team_1.JPG" alt="" class="img-fluid" style="width: 400px; height: 500px;">
-              <div class="team_info">
-                <h1>Aniket Malusare</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, quos.</p>
+            <div class="card h-100">
+              <div class="team_image">
+                <img src="/resources/user_4.avif" class="card-img-top" alt="...">
+              </div>
+          
+              <div class="card-body">
+                <h5 class="card-title" style="color: #6d7985;">Vijay</h5>
+                <p class="card-text" style="color: #6d7985; font-size: 1rem;">7+ years experience in Interior Design and Renovations</p>
               </div>
             </div>
           </div>

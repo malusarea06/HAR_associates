@@ -55,6 +55,12 @@ h2{
     text-align: center;
 }
 
+h1{
+    font-size: 1.7rem;
+}
+
+
+
 .card-title{
     color: white;
     font-size: 1.7rem;
@@ -91,7 +97,7 @@ h2{
 }
 
 card-body{
-    padding: 4rem;
+    padding: 3rem;
 }
 
 hr{
@@ -180,11 +186,15 @@ h4{
     border-top-right-radius: 2rem;
 }
 
+.team_image{
+    padding: .5rem;
+}
+
 .card-body{
     border-end-start-radius: 2rem;
     border-end-end-radius: 2rem;
     text-align: center;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
     padding: 2rem;
 }
 
