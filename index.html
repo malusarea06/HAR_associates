@@ -16,8 +16,8 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <!-- Option 1: Include in HTML -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=north_east" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/style.css">
 
   </head>
@@ -39,13 +39,13 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item ms-3">
-                  <a class="nav-link" href="#ourservices">projects</a>
-                </li>
-                <li class="nav-item ms-3">
-                  <a class="nav-link" href="#">Projects</a>
+                  <a class="nav-link" href="#ourservices">Projects</a>
                 </li>
                 <li class="nav-item ms-3">
                   <a class="nav-link" href="#about-us">About Us</a>
+                </li>
+                <li class="nav-item ms-3">
+                  <a class="nav-link" href="#har_team">Our Team</a>
                 </li>
               </ul>
             </div>
@@ -116,7 +116,7 @@
         </div>
 
         <!-- Service Cards -->
-        <div class="row service-content">
+        <div class="row service-content g-4">
           <!-- <div class="col-md-4 col-sm-12 d-flex card-layout cend">
             <div class="card text-center w-75">
               <img src="/resources/background_2.jpg" class="card-img-top" alt="..." style="width: 300; height: 300px;">
@@ -149,9 +149,7 @@
               </div>
             </div>
           </div> -->
-
-          <div class="row row-cols-1 row-cols-md-3 g-3" style="padding: %;">
-            <div class="col d-flex justify-content-end">
+            <div class="col d-flex project_end">
               <div class="card w-75 h-100">
                 <img src="resources/background_1.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color:#B86A45 ;">
@@ -169,26 +167,24 @@
                 <div class="card-body" style="background-color: #968679;">
                   <h5 class="card-title">Interior Designing</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="#!" role="button">View Projects
+                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="/pages/interior_design.html" role="button">View Projects
                     <i class="bi bi-arrow-up-right p-.5"></i>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card w-75 h">
+            <div class="col d-flex project_start">
+              <div class="card w-75 h-100">
                 <img src="resources/renovation.jpg" class="card-img-top" alt="...">
                 <div class="card-body" style="background-color: #6d7985;">
                   <h5 class="card-title">Renovations & Restoration</h5>
                   <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
-                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="#!" role="button">View Projects
+                  <a class="btn btn-outline-light p-2" data-mdb-ripple-init href="/pages/renovations.html" role="button">View Projects
                     <i class="bi bi-arrow-up-right p-.5"></i>
                   </a>
                 </div>
               </div>
             </div>
-          </div>
-
         </div>
       </div>
     </section>
@@ -196,25 +192,23 @@
 
 
     <!-- About US Start -->
-    <section class="about_us section_start" id="about-us">
+    <section class="about_us section_start" id="about-us" style="background-color:#8C8989 ;">
       <div class="container-fluid">
         <div class="row">
-          <div class="col-lg-6 col-sm-12" style="padding: 3rem;">
-              <img class="img-fluid" src="/resources/background_4.jpg" alt="">
+          <div class="col-lg-5 col-sm-12 d-flex justify-content-center ">
+              <img class="img-fluid about_us_img" src="/resources/background_4.jpg" alt="">
           </div>
-          <div class="col-lg-6 col-sm-12" style="padding: 2rem;">
-            <div class="d-flex flex-row">
-              <div class="heading_service">
+          <div class="col-lg-7 col-sm-12">
+            <div class="d-flex flex-row heading_service">
                 <span class="abt_head">ABOUT </span>
                 <span class="abt_head_color">US</span>
-              </div>
             </div>
-            <div class="row">
-              <div class="d-flex flex-row align-items-center">
+            <!-- <div class="row">
+              <div class="d-flex flex-row align-items-center heading_service">
                 <hr style="width: 40%;" size="5">
               </div>
-            </div>
-            <div class="row mt-5 text-start">
+            </div> -->
+            <div class="row mt-3 about_text">
               <p class="about_para">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci impedit eaque ad architecto ipsam explicabo quaerat, quia quam culpa 
                 sunt qui, suscipit in earum tempora consequuntur! Unde nemo pariatur consectetur quae ipsam qui quaerat modi quam, dolores deleniti maxime libero 
@@ -227,12 +221,75 @@
                 perferendis voluptates.
               </p>
             </div>
+
+            <div class="d-flex flex-row heading_service" style="padding-top: 4rem;">
+              <span class="abt_head">WHO ARE</span>
+              <span class="abt_head_color">WE</span>
+            </div>
+            <div class="row mt-3 about_text">
+              <p class="about_para bottom_padding">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci impedit eaque ad architecto ipsam explicabo quaerat, quia quam culpa 
+                sunt qui, suscipit in earum tempora consequuntur! Unde nemo pariatur consectetur quae ipsam qui quaerat modi quam, dolores deleniti maxime libero 
+                sequi, facilis dolore omnis nobis recusandae laboriosam perspiciatis ipsa officiis. 
+              </p>
+            </div>
           </div>
-        </div>
         </div>
       </div>
     </section>
     <!-- About Us End -->
+
+    <!-- Why Choose Us Section -->
+     <section class="why_choose_us" id="choose_us">
+      <div class="container why_us_sec">
+        <div class="row pt-5">
+          <span class="why_us_head">WHY CHOOSE US?</span>
+        </div>
+        <div class="row pt-5">
+          <div class="col-lg-6 col-sm-12  p-4">
+            <div class="d-flex flex-row align-items-center">
+              <span class="material-symbols-outlined icon_size">engineering</span>
+              <div class="d-flex flex-column p-2">
+                <span class="service_title">Quality Workmanship</span>
+                <p class="service_txt pt-2">We take pride in delivering meticulous and detail-oriented work. Our team is committed to exceeding our clients' expectations and ensuring long-term satisfaction.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-12  p-4">
+            <div class="d-flex flex-row align-items-center">
+              <span class="material-symbols-outlined icon_size">hourglass_top</span>
+              <div class="d-flex flex-column p-2">
+                <span class="service_title">Timely Completion</span>
+                <p class="service_txt pt-2">We understand that time is of the essence in construction projects. We work diligently to complete projects within the agreed-upon timeline, minimizing disruptions to your daily routine.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 col-sm-12  p-4">
+            <div class="d-flex flex-row align-items-center">
+              <span class="material-symbols-outlined icon_size">currency_rupee</span>
+              <div class="d-flex flex-column p-2">
+                <span class="service_title">Cost-Efficient Solutions</span>
+                <p class="service_txt pt-2">We understand the importance of cost-effectiveness. Our transparent pricing structure ensures that you receive value for money without compromising on quality</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-12  p-4">
+            <div class="d-flex flex-row align-items-center">
+              <span class="material-symbols-outlined icon_size">support_agent</span>
+              <div class="d-flex flex-column p-2">
+                <span class="service_title">On-going Support</span>
+                <p class="service_txt pt-2">Our commitment to customer satisfaction extends beyond project completion. We offer ongoing support and maintenance services to address any issues that may arise after the project is completed.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
 
     <!-- Meet our team -->
     <section class="team_section section_start" id="har_team">
@@ -244,8 +301,8 @@
           </div>
           <hr style="width: 40%;" size="5">
         </div>
-        <div class="row" style="padding: 6rem;">
-          <div class="col-md-3 col-sm-6">
+        <div class="row team_padding g-4">
+          <div class="col-md-3 col-sm-12">
             <div class="card h-100">
               <div class="team_image">
                 <img src="/resources/user_1.jpg" class="card-img-top" alt="...">
@@ -258,7 +315,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-12">
             <div class="card h-100">
               <div class="team_image">
                 <img src="/resources/user_2.jpg" class="card-img-top" alt="...">
@@ -271,7 +328,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-12">
             <div class="card h-100">
               <div class="team_image">
                 <img src="/resources/user_1.jpg" class="card-img-top" alt="...">
@@ -284,7 +341,7 @@
             </div>
           </div>
 
-          <div class="col-md-3 col-sm-6">
+          <div class="col-md-3 col-sm-12">
             <div class="card h-100">
               <div class="team_image">
                 <img src="/resources/user_4.avif" class="card-img-top" alt="...">
