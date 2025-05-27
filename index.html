@@ -39,7 +39,7 @@
                   <a class="nav-link" aria-current="page" href="#">Home</a>
                 </li>
                 <li class="nav-item ms-3">
-                  <a class="nav-link" href="#ourservices">Projects</a>
+                  <a class="nav-link" href="#our_projects">Projects</a>
                 </li>
                 <li class="nav-item ms-3">
                   <a class="nav-link" href="#about-us">About Us</a>
@@ -66,11 +66,13 @@
                 <h1 class="heading_txt" style="padding-left: 1rem;">ASSOCIATES</h1>
               </div>
               <h4 class="mt-2">Transforming spaces, enhancing lives.</h4>
-              <div class="d-flex flex-row mt-4">
-                <a class="a_link" href="#ourservices">Explore More</a>
-                <!-- <a href="" style="color: #509431;">Explore More</a> -->
-                <img src="/icons/arrow-down.png" alt="dropdown icon" width="30" height="30" class="ps-1.5">
-              </div>
+              <a href="#our_services" class="a_link">
+                <div class="d-flex flex-row mt-4">
+                  <p class="a_link">Explore More</p>
+                  <!-- <a href="" style="color: #509431;">Explore More</a> -->
+                  <img src="/icons/arrow-down.png" alt="dropdown icon" width="30" height="30" class="ps-1.5" href="#ourservices">
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -101,54 +103,75 @@
     </section>
     <!-- Home Page End -->
 
-    
-
-    <!-- Our Projects -->
-    <section class="our_services section_start" id="ourservices">
+    <!-- Our Services -->
+    <section class="our_services section_start" id="our_services">
       <div class="container-fluid">
         <!-- Service Title -->
         <div class="d-flex flex-column service-title">
           <div class="heading_service">
             <span class="srv_head">OUR </span>
-            <span class="srv_head_color">PROJECTS</span>
+            <span class="srv_head_color">SERVICES</span>
           </div>
           <hr style="width: 40%;" size="5">
         </div>
 
-        <!-- Service Cards -->
+        <div class="row service-content">
+          <div class="col-sm-12 col-lg-4">
+            <div class="d-flex flex-column justify-content-center align-items-center p-3">
+              <img src="/icons/furbishing.png" alt="" width="120" height="120">
+              <h4 class="pt-3">Home Interior</h4>
+            </div>
+          </div>
+
+            <div class="col-sm-12 col-lg-4">
+              <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="/icons/office.png" alt="" width="120" height="120">
+                <h4 class="pt-3">Corporate Interior</h4>
+              </div>
+            </div>
+
+            <div class="col-sm-12 col-lg-4">
+              <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="/icons/safety.png" alt="" width="120" height="120">
+                <h4 class="pt-3">Construtction</h4>
+              </div>
+            </div>
+        </div>
+
+        <div class="row service-content p-3">
+          <div class="col-sm-12 col-lg-6 ">
+            <div class="d-flex flex-column justify-content-center align-items-center p-3">
+              <img src="/icons/furbishing.png" alt="" width="120" height="120">
+              <h4 class="pt-3">Restoration & Renovation</h4>
+            </div>
+          </div>
+
+            <div class="col-sm-12 col-lg-6">
+              <div class="d-flex flex-column justify-content-center align-items-center p-3">
+                <img src="/icons/office.png" alt="" width="120" height="120">
+                <h4 class="pt-3">Corporate Inteiror</h4>
+              </div>
+            </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our Services Ends -->
+    
+
+    <!-- Our Projects -->
+    <section class="our_projects section_start" id="our_projects">
+      <div class="container-fluid">
+        <!-- Service Title -->
+        <div class="d-flex flex-column service-title">
+          <div class="heading_service">
+            <span class="srv_head_color">OUR </span>
+            <span class="srv_head">PROJECTS</span>
+          </div>
+          <hr style="width: 40%;" size="5">
+        </div>
+
+        <!-- Projects Cards -->
         <div class="row service-content g-4">
-          <!-- <div class="col-md-4 col-sm-12 d-flex card-layout cend">
-            <div class="card text-center w-75">
-              <img src="/resources/background_2.jpg" class="card-img-top" alt="..." style="width: 300; height: 300px;">
-            
-              <div class="card-body" style="background-color: #ABABAB;">
-                <h5 class="card-title crd-style">Construction</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 d-flex justify-content-center card-layout">
-            <div class="card text-center w-75">
-              <img src="/resources/interior_design.jpg" class="card-img-top" alt="..." style="height: 300px;">
-            
-              <div class="card-body" style="background-color: #ABA8A4;">  
-                <h5 class="card-title">Interior Designing</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-md-4 col-sm-12 d-flex card-layout cstart">
-            <div class="card text-center w-75">
-              <img src="/resources/renovation.jpg" class="card-img-top" alt="..." style="height: 300px;">
-            
-              <div class="card-body" style="background-color: #9E877A;">
-                <h5 class="card-title">Restoration & Renovations</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              </div>
-            </div>
-          </div> -->
             <div class="col d-flex project_end">
               <div class="card w-75 h-100">
                 <img src="resources/background_1.jpg" class="card-img-top" alt="...">
@@ -188,11 +211,11 @@
         </div>
       </div>
     </section>
-    <!-- Our Service Ends -->
+    <!-- Our Projects Ends -->
 
 
     <!-- About US Start -->
-    <section class="about_us section_start" id="about-us" style="background-color:#8C8989 ;">
+    <section class="about_us section_start" id="about-us" style="background-color:#c2bebe ;">
       <div class="container-fluid">
         <div class="row">
           <div class="col-lg-5 col-sm-12 d-flex justify-content-center ">
@@ -208,25 +231,25 @@
                 <hr style="width: 40%;" size="5">
               </div>
             </div> -->
-            <div class="row mt-3 about_text">
+            <div class="row">
               <p class="about_para">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci impedit eaque ad architecto ipsam explicabo quaerat, quia quam culpa 
-                sunt qui, suscipit in earum tempora consequuntur! Unde nemo pariatur consectetur quae ipsam qui quaerat modi quam, dolores deleniti maxime libero 
-                sequi, facilis dolore omnis nobis recusandae laboriosam perspiciatis ipsa officiis. 
+                Properties dating back to 1900s, residential architectural design covers a vast range of styles. Renovation of an old house has its own challenges. 
+                Building regulations were non-existent, there was variation in material used as compared to modern-day construction, also the layouts have also changed. 
+                We have completed 50 projects and have no shortage of renovation ideas for old homes. The only thing you need is the experienced eye of a professional and the 
+                right team for execution of your renovation project. Our 5-step approach to renovations has enabled us to deliver consistently excellent results.
               </p>
               <p class="about_para">
-                Accusamus id cupiditate quos recusandae itaque dicta, veritatis
-                aperiam quod hic voluptatum odio mollitia ipsa ut harum perferendis, animi explicabo facilis repellat et. Libero odio, harum corporis culpa quam 
-                facilis non earum eos consequatur laborum minus, nesciunt sint ipsa impedit aliquam at tempora consequuntur numquam odit aperiam. Deserunt, 
-                perferendis voluptates.
+                A professional Re-modelling consultant will be by your side at every step, from 
+                ideation to execution of the same, so you feel supported and well-informed to 
+                make important decisions about your house renovation.
               </p>
             </div>
 
-            <div class="d-flex flex-row heading_service" style="padding-top: 4rem;">
+            <div class="d-flex flex-row heading_service" style="padding-top: 1rem;">
               <span class="abt_head">WHO ARE</span>
               <span class="abt_head_color">WE</span>
             </div>
-            <div class="row mt-3 about_text">
+            <div class="row about_text">
               <p class="about_para bottom_padding">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci impedit eaque ad architecto ipsam explicabo quaerat, quia quam culpa 
                 sunt qui, suscipit in earum tempora consequuntur! Unde nemo pariatur consectetur quae ipsam qui quaerat modi quam, dolores deleniti maxime libero 
